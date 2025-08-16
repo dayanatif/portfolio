@@ -40,13 +40,14 @@ section {
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .contact, footer {
+.about, .services, .skills, .contact, .certifications, footer {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.contact .contact-content,
+.certifications .cert-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -387,192 +388,119 @@ section .title::after {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
 }
-.skills-content .right .html::before {
-    width: 95%;
+.skills-content .right .html::before { width: 95%; }
+.skills-content .right .css::before { width: 90%; }
+.skills-content .right .js::before { width: 85%; }
+.skills-content .right .php::before { width: 80%; }
+.skills-content .right .mysql::before { width: 70%; }
+
+/* Certifications Section */
+.certifications {
+    background: #0f0f0f;
 }
-.skills-content .right .css::before {
-    width: 90%;
+.certifications .title::after {
+    content: "what i achieved";
+    background: #0f0f0f;
 }
-.skills-content .right .js::before {
-    width: 85%;
+.certifications .cert-content .card {
+    width: calc(50% - 20px);
+    background: #1a1a1a;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4f4f5;
 }
-.skills-content .right .php::before {
-    width: 80%;
+.certifications .cert-content .card i {
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 15px;
 }
-.skills-content .right .mysql::before {
-    width: 70%;
+.certifications .cert-content .card .text {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.certifications .cert-content .card p {
+    color: #a1a1aa;
+    text-align: center;
+    line-height: 1.5;
+}
+.certifications .cert-content .card:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+}
+.certifications .cert-content .card:hover i {
+    color: #fff;
+}
+.certifications .cert-content .card:hover .text,
+.certifications .cert-content .card:hover p {
+    color: #fff;
 }
 
 /* Contact Section */
 .contact {
     background: #0f0f0f;
 }
-.contact .title::after {
-    content: "get in touch";
-    background: #0f0f0f;
-}
-.contact .contact-content .column {
-    width: calc(50% - 30px);
-}
+.contact .title::after { content: "get in touch"; background: #0f0f0f; }
+.contact .contact-content .column { width: calc(50% - 30px); }
 .contact .contact-content .left .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #f4f4f5;
 }
-.contact .contact-content .left p {
-    color: #a1a1aa;
-    line-height: 1.6;
-}
-.contact .contact-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-    margin: 25px 0;
-}
-.contact .contact-content .row i {
-    font-size: 25px;
-    color: #2563eb;
-}
-.contact .contact-content .row .info {
-    margin-left: 30px;
-}
-.contact .contact-content .row .info .head {
-    font-weight: 500;
-    color: #f4f4f5;
-}
-.contact .contact-content .row .info .sub-title {
-    color: #a1a1aa;
-}
-.contact .right .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #f4f4f5;
-}
-.contact .right form .fields {
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field {
-    height: 45px;
+.contact .contact-content .left p { color: #a1a1aa; line-height: 1.6; }
+.contact .contact-content .row { display: flex; height: 65px; align-items: center; margin: 25px 0; }
+.contact .contact-content .row i { font-size: 25px; color: #2563eb; }
+.contact .contact-content .row .info { margin-left: 30px; }
+.contact .contact-content .row .info .head { font-weight: 500; color: #f4f4f5; }
+.contact .contact-content .row .info .sub-title { color: #a1a1aa; }
+.contact form .fields { display: flex; }
+.contact form .field { width: 100%; margin-bottom: 15px; }
+.contact form input, .contact form textarea {
     width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea {
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid #404040;
+    padding: 10px;
     border-radius: 6px;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    border: 1px solid #404040;
     background: #1a1a1a;
-    color: #e4e4e7;
-    transition: border-color 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-    border-color: #2563eb;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-.contact .right form .textarea textarea {
-    padding-top: 10px;
+    color: #f4f4f5;
     resize: none;
 }
-.right form .button-area button {
-    color: #fff;
-    width: 160px;
-    height: 45px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    background: #2563eb;
-    border: 2px solid #2563eb;
-    transition: all 0.3s ease;
-}
-.right form .button-area button:hover {
-    color: #2563eb;
-    background: transparent;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
-}
+.contact form button { background: #2563eb; color: #fff; padding: 10px 30px; border: none; border-radius: 6px; cursor: pointer; transition: all 0.3s ease; }
+.contact form button:hover { background: #1d4ed8; transform: translateY(-2px); }
 
 /* Footer */
 footer {
-    background: #0a0a0a;
-    padding: 15px 23px;
+    background: #141414;
     color: #a1a1aa;
     text-align: center;
-    border-top: 1px solid #2a2a2a;
+    padding: 20px 0;
 }
-footer span a {
-    color: #2563eb;
-}
-footer span a:hover {
-    text-decoration: underline;
-    color: #1d4ed8;
-}
+footer a { color: #2563eb; }
+footer a:hover { color: #1d4ed8; }
 
 /* Responsive */
 @media (max-width: 991px) {
     .max-width { padding: 0 50px; }
-}
-@media (max-width: 947px) {
-    .menu-btn { display: block; }
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #0f0f0f;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active { left: 0; }
-    .navbar .menu li { display: block; }
-    .navbar .menu li a {
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .about .about-content .column,
+    .about .about-content .left, .about .about-content .right,
     .skills .skills-content .column,
-    .contact .contact-content .column {
+    .contact .contact-content .column,
+    .services .serv-content .card,
+    .certifications .cert-content .card {
         width: 100%;
-        margin-bottom: 35px;
-    }
-    .services .serv-content .card {
-        width: calc(100% - 10px);
         margin-bottom: 20px;
     }
-}
-
-@media (max-width: 690px) {
-    .home .home-content .text-2 {
-        font-size: 60px;
-    }
-    .home .home-content .text-3 {
-        font-size: 32px;
-    }
-    .max-width {
-        padding: 0 23px;
-    }
-}
-
-@media (max-width: 500px) {
-    .home .home-content .text-2 {
-        font-size: 50px;
-    }
-    .home .home-content .text-3 {
-        font-size: 27px;
-    }
+    .menu-btn { display: block; }
+    .navbar .menu { position: fixed; height: 100vh; width: 100%; left: -100%; top: 0; background: #1a1a1a; display: block; text-align: center; padding-top: 100px; transition: all 0.3s ease; }
+    .navbar .menu.active { left: 0; }
+    .navbar .menu li { display: block; margin: 50px 0; }
 }
