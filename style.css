@@ -446,6 +446,55 @@ section .title::after {
     color: #fff;
 }
 
+/* Hackathons Section */
+.hackathons {
+    background: #141414;
+}
+.hackathons .title::after {
+    content: "what I competed in";
+    background: #141414;
+}
+.hackathons .hack-content .card {
+    width: calc(50% - 20px);
+    background: #1a1a1a;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4f4f5;
+}
+.hackathons .hack-content .card i {
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+.hackathons .hack-content .card .text {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.hackathons .hack-content .card p {
+    color: #a1a1aa;
+    text-align: center;
+    line-height: 1.5;
+}
+.hackathons .hack-content .card:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+}
+.hackathons .hack-content .card:hover i,
+.hackathons .hack-content .card:hover .text,
+.hackathons .hack-content .card:hover p {
+    color: #fff;
+}
 /* Contact Section */
 .contact {
     background: #0f0f0f;
@@ -504,64 +553,3 @@ footer a:hover { color: #1d4ed8; }
     .navbar .menu.active { left: 0; }
     .navbar .menu li { display: block; margin: 50px 0; }
 }
-
-/* Hackathons & Competitions Section */
-.hackathons {
-    background: #141414;
-    color: #f4f4f5;
-}
-.hackathons .title::after {
-    content: "competitions & hackathons";
-    background: #141414;
-}
-.hackathons .hack-content .card {
-    width: calc(50% - 20px);
-    background: #1a1a1a;
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid #2a2a2a;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #f4f4f5;
-}
-.hackathons .hack-content .card i {
-    font-size: 45px;
-    color: #2563eb;
-    margin-bottom: 15px;
-}
-.hackathons .hack-content .card .text {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.hackathons .hack-content .card p {
-    color: #a1a1aa;
-    text-align: center;
-    line-height: 1.5;
-}
-.hackathons .hack-content .card:hover {
-    background: #2563eb;
-    border-color: #2563eb;
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
-}
-.hackathons .hack-content .card:hover i {
-    color: #fff;
-}
-.hackathons .hack-content .card:hover .text,
-.hackathons .hack-content .card:hover p {
-    color: #fff;
-}
-
-/* Responsive for Hackathons */
-@media (max-width: 991px){
-    .hackathons .hack-content .card {
-        width: 100%;
-    }
-}
-
