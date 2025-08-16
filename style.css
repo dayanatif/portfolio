@@ -454,8 +454,17 @@ section .title::after {
     content: "what I competed in";
     background: #141414;
 }
+
+/* Flex container for cards */
+.hackathons .hack-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual cards */
 .hackathons .hack-content .card {
-    width: calc(50% - 20px);
+    width: calc(50% - 20px); /* Two cards per row */
     background: #1a1a1a;
     text-align: center;
     border-radius: 12px;
@@ -469,21 +478,30 @@ section .title::after {
     align-items: center;
     color: #f4f4f5;
 }
+
+/* Icon styling */
 .hackathons .hack-content .card i {
     font-size: 45px;
     color: #2563eb;
     margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
+
+/* Card title */
 .hackathons .hack-content .card .text {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+/* Card description */
 .hackathons .hack-content .card p {
     color: #a1a1aa;
     text-align: center;
     line-height: 1.5;
 }
+
+/* Hover effect */
 .hackathons .hack-content .card:hover {
     background: #2563eb;
     border-color: #2563eb;
@@ -494,6 +512,14 @@ section .title::after {
 .hackathons .hack-content .card:hover .text,
 .hackathons .hack-content .card:hover p {
     color: #fff;
+}
+
+/* Responsive behavior */
+@media (max-width: 991px) {
+    .hackathons .hack-content .card {
+        width: 100%; /* Single card per row on mobile */
+        margin-bottom: 20px;
+    }
 }
 /* Contact Section */
 .contact {
