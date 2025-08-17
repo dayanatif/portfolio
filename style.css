@@ -446,9 +446,9 @@ section .title::after {
     color: #fff;
 }
 
-/* ================= Hackathons Section ================= */
+/* Hackathons Section */
 .hackathons {
-    background: #141414; /* darker shade than certifications for contrast */
+    background: #141414; /* darker shade for contrast */
 }
 .hackathons .title::after {
     content: "what i conquered";
@@ -473,7 +473,7 @@ section .title::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; /* removes underline from <a> cards */
+    text-decoration: none;
 }
 .hackathons .hack-content .card i {
     font-size: 45px;
@@ -481,12 +481,14 @@ section .title::after {
     margin-bottom: 15px;
 }
 .hackathons .hack-content .card .text {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin-bottom: 10px;
 }
 .hackathons .hack-content .card p {
-    color: #999;
+    color: #a1a1aa;
+    text-align: center;
+    line-height: 1.5;
 }
 .hackathons .hack-content .card:hover {
     background: #2563eb;
