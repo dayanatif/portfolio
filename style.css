@@ -542,18 +542,6 @@ section .title::after {
 .contact form button { background: #2563eb; color: #fff; padding: 10px 30px; border: none; border-radius: 6px; cursor: pointer; transition: all 0.3s ease; }
 .contact form button:hover { background: #1d4ed8; transform: translateY(-2px); }
 
-/* Contact section links */
-.contact .contact-content .row .info .sub-title a {
-    color: #2563eb;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.contact .contact-content .row .info .sub-title a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
-}
-
-
 /* Footer */
 footer {
     background: #141414;
