@@ -37,39 +37,7 @@
       color: var(--white);
       font-family: var(--sans);
       overflow-x: hidden;
-      cursor: none;
     }
-
-    /* ── CURSOR ── */
-    #cursor {
-      position: fixed;
-      width: 12px; height: 12px;
-      border-radius: 50%;
-      background: var(--accent);
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%,-50%);
-      transition: width .18s, height .18s, opacity .18s;
-      mix-blend-mode: screen;
-    }
-    #cursor-ring {
-      position: fixed;
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      border: 1px solid rgba(0,229,138,0.45);
-      pointer-events: none;
-      z-index: 9998;
-      transform: translate(-50%,-50%);
-      transition: width .35s cubic-bezier(.25,.46,.45,.94),
-                  height .35s cubic-bezier(.25,.46,.45,.94),
-                  border-color .2s;
-    }
-    body:has(a:hover) #cursor-ring,
-    body:has(button:hover) #cursor-ring {
-      width: 56px; height: 56px;
-      border-color: var(--accent);
-    }
-    body:has(a:hover) #cursor { opacity: .5; }
 
     /* ── AMBIENT ORBS ── */
     .orb {
@@ -134,7 +102,7 @@
       position: fixed; bottom: 28px; right: 28px; z-index: 1000;
       width: 44px; height: 44px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      color: var(--accent); cursor: none;
+      color: var(--accent); 
       opacity: 0; transition: opacity .3s, transform .3s; pointer-events: none;
     }
     .scroll-up.visible { opacity: 1; pointer-events: all; }
@@ -172,7 +140,7 @@
     .nav-hire:hover { box-shadow: 0 0 20px var(--accent-glow); transform: translateY(-1px); }
     .menu-toggle {
       display: flex; flex-direction: column; gap: 5px;
-      cursor: none; padding: 4px;
+       padding: 4px;
     }
     .menu-toggle span {
       display: block; width: 22px; height: 2px;
@@ -188,7 +156,7 @@
       font-family: var(--serif); transition: color .2s;
     }
     .mobile-menu a:hover { color: var(--accent); }
-    .mobile-close { position: absolute; top: 28px; right: 28px; font-size: 24px; cursor: none; color: var(--white-60); }
+    .mobile-close { position: absolute; top: 28px; right: 28px; font-size: 24px;  color: var(--white-60); }
     @media (min-width: 768px) { .nav-links { display: flex; } .menu-toggle { display: none; } }
 
     /* ── HERO ── */
@@ -372,7 +340,7 @@
     .project-card {
       border-radius: 20px; padding: 28px 28px 24px;
       text-decoration: none; color: var(--white);
-      transition: transform .3s, box-shadow .3s; cursor: none; display: block;
+      transition: transform .3s, box-shadow .3s;  display: block;
       position: relative; overflow: hidden;
     }
     .project-card::after {
@@ -424,7 +392,7 @@
     .hack-card {
       border-radius: 16px; padding: 22px 24px; text-decoration: none; color: var(--white);
       display: flex; gap: 18px; align-items: flex-start;
-      transition: transform .25s, box-shadow .25s; cursor: none;
+      transition: transform .25s, box-shadow .25s; 
     }
     .hack-card:hover { transform: translateX(5px); box-shadow: -3px 0 0 var(--accent); }
     .hack-icon {
@@ -448,7 +416,7 @@
     .cert-card {
       border-radius: 16px; padding: 22px 24px; text-decoration: none; color: var(--white);
       display: flex; gap: 18px; align-items: flex-start;
-      transition: transform .25s; cursor: none; position: relative; overflow: hidden;
+      transition: transform .25s;  position: relative; overflow: hidden;
     }
     .cert-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
@@ -509,7 +477,7 @@
       width: 42px; height: 42px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       color: var(--white-60); text-decoration: none; font-size: 16px;
-      transition: color .2s, transform .2s, box-shadow .2s; cursor: none;
+      transition: color .2s, transform .2s, box-shadow .2s; 
     }
     .social-btn:hover { color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,229,138,0.15); }
     .form-group { margin-bottom: 14px; }
@@ -528,7 +496,7 @@
     .form-submit {
       border-radius: 9999px; padding: 13px 36px;
       background: var(--accent); color: var(--dark);
-      font-weight: 600; font-size: 13.5px; border: none; cursor: none;
+      font-weight: 600; font-size: 13.5px; border: none; 
       transition: box-shadow .2s, transform .2s; font-family: var(--sans);
     }
     .form-submit:hover { box-shadow: 0 0 28px var(--accent-glow); transform: translateY(-2px); }
@@ -583,10 +551,6 @@
   </style>
 </head>
 <body>
-
-<!-- Cursor -->
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
 
 <!-- Orbs -->
 <div class="orb orb-1"></div>
@@ -746,56 +710,18 @@
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
         <div class="timeline-meta">
-          <div class="timeline-role">Final Year Project Researcher</div>
-          <div class="timeline-org">FAST-NUCES, Karachi</div>
+          <div class="timeline-role">ML Engineering Intern</div>
+          <div class="timeline-org">Elevvo Pathways</div>
           <div class="timeline-date">2025 — Present</div>
         </div>
         <div class="timeline-desc">
-          Developing DR-RobustBench, a benchmarking framework evaluating deep learning architectures under simulated retinal fundus image degradation for diabetic retinopathy grading. Architectures include EfficientNet-B4, ConvNeXt-Tiny, Swin Transformer, and RETFound.
+          Working on machine learning pipelines and AI-driven features at Elevvo Pathways. Contributing to model development, experimentation, and deployment of intelligent systems in a production environment.
         </div>
         <div class="timeline-tags">
-          <span class="timeline-tag">PyTorch</span>
-          <span class="timeline-tag">Medical AI</span>
-          <span class="timeline-tag">EfficientNet</span>
-          <span class="timeline-tag">Swin Transformer</span>
-          <span class="timeline-tag">Computer Vision</span>
-        </div>
-      </div>
-
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-meta">
-          <div class="timeline-role">Freelance AI/Web Developer</div>
-          <div class="timeline-org">Self-employed</div>
-          <div class="timeline-date">2024 — Present</div>
-        </div>
-        <div class="timeline-desc">
-          Building AI-powered products and full-stack web solutions for clients. Projects include a Moodle LMS deployment for Kingsley's Chicken, the BEEzy Agency website with Three.js animations, and various LLM-integrated tools.
-        </div>
-        <div class="timeline-tags">
-          <span class="timeline-tag">LangChain</span>
-          <span class="timeline-tag">FastAPI</span>
-          <span class="timeline-tag">Three.js</span>
-          <span class="timeline-tag">Docker</span>
-          <span class="timeline-tag">Moodle</span>
-        </div>
-      </div>
-
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-meta">
-          <div class="timeline-role">CS Undergraduate Student</div>
-          <div class="timeline-org">FAST-NUCES, Karachi</div>
-          <div class="timeline-date">2021 — 2027</div>
-        </div>
-        <div class="timeline-desc">
-          Studying Computer Science with focus areas in AI, machine learning, and deep learning. Participated in hackathons (Harvard CS50x, LabLab, Meta Hacker Cup), completed specializations in ML and cloud, and built a portfolio of applied AI systems.
-        </div>
-        <div class="timeline-tags">
-          <span class="timeline-tag">AI/ML</span>
           <span class="timeline-tag">Python</span>
-          <span class="timeline-tag">Research</span>
-          <span class="timeline-tag">AWS</span>
+          <span class="timeline-tag">Machine Learning</span>
+          <span class="timeline-tag">PyTorch</span>
+          <span class="timeline-tag">AI Pipelines</span>
         </div>
       </div>
 
@@ -1148,19 +1074,6 @@
 </footer>
 
 <script>
-  // ── Cursor ──
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursor-ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-  function animCursor() {
-    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(animCursor);
-  }
-  animCursor();
-
   // ── Typed.js ──
   new Typed('#typed-hero', {
     strings: ['LLM Researcher.', 'Robustness Engineer.', 'Multimodal AI Builder.', 'Hallucination Hunter.', 'Vision Model Benchmarker.'],
