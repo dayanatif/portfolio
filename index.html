@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rao Muhammad Dayan Atif — AI/ML Engineer</title>
+  <title>Rao Muhammad Dayan Atif — AI/ML Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -232,7 +232,7 @@
     .hero-role {
       font-family: var(--mono); font-size: clamp(13px, 2.2vw, 17px);
       color: var(--white-60); margin-bottom: 48px;
-      height: 28px; /* prevent layout shift */
+      height: 28px;
     }
     .hero-role .accent-type { color: var(--accent); }
     .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -284,6 +284,19 @@
       width: 100%; height: 1px; position: relative; z-index: 1;
       background: linear-gradient(to right, transparent, rgba(255,255,255,0.07), transparent);
     }
+
+    /* ── RESEARCH INTERESTS ── */
+    .research-pills {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;
+    }
+    .research-pill {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--mono); font-size: 11px;
+      color: var(--accent); padding: 7px 16px;
+      border-radius: 9999px; background: var(--accent-dim);
+      border: 1px solid rgba(0,229,138,0.18);
+    }
+    .research-pill i { font-size: 11px; }
 
     /* ── ABOUT ── */
     #about { background: var(--dark); }
@@ -629,13 +642,13 @@
   <div class="hero-content">
     <div class="availability">
       <span class="availability-dot"></span>
-      Open to research positions &amp; internships
+      Seeking funded PhD / research positions
     </div>
-    <div class="hero-eyebrow">AI / ML Engineer &nbsp; · &nbsp; Karachi, Pakistan</div>
+    <div class="hero-eyebrow">AI Research &nbsp; · &nbsp; Karachi, Pakistan</div>
     <h1 class="hero-name">Rao Muhammad<br/><em>Dayan Atif</em></h1>
     <div class="hero-role">&gt;_ <span class="accent-type" id="typed-hero"></span></div>
     <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#projects" class="btn-primary">View Research</a>
       <a href="assets/DAYAN_RESUME.pdf" target="_blank" class="btn-glass glass">Download CV</a>
     </div>
   </div>
@@ -648,31 +661,31 @@
 <!-- Marquee -->
 <div class="marquee-wrap">
   <div class="marquee-track" id="marquee">
-    <span class="marquee-item"><span class="dot"></span>PyTorch</span>
-    <span class="marquee-item"><span class="dot"></span>Computer Vision</span>
-    <span class="marquee-item"><span class="dot"></span>LangChain</span>
-    <span class="marquee-item"><span class="dot"></span>Transformers</span>
-    <span class="marquee-item"><span class="dot"></span>Deep Learning</span>
-    <span class="marquee-item"><span class="dot"></span>MediaPipe</span>
-    <span class="marquee-item"><span class="dot"></span>HuggingFace</span>
-    <span class="marquee-item"><span class="dot"></span>FastAPI</span>
-    <span class="marquee-item"><span class="dot"></span>AWS SageMaker</span>
-    <span class="marquee-item"><span class="dot"></span>Streamlit</span>
+    <span class="marquee-item"><span class="dot"></span>LLM Benchmarking</span>
+    <span class="marquee-item"><span class="dot"></span>Hallucination Detection</span>
+    <span class="marquee-item"><span class="dot"></span>Adversarial Robustness</span>
+    <span class="marquee-item"><span class="dot"></span>Multimodal Models</span>
+    <span class="marquee-item"><span class="dot"></span>Vision Transformers</span>
     <span class="marquee-item"><span class="dot"></span>RAG Pipelines</span>
+    <span class="marquee-item"><span class="dot"></span>HuggingFace</span>
+    <span class="marquee-item"><span class="dot"></span>PyTorch</span>
     <span class="marquee-item"><span class="dot"></span>Medical AI</span>
+    <span class="marquee-item"><span class="dot"></span>Model Evaluation</span>
+    <span class="marquee-item"><span class="dot"></span>Foundation Models</span>
+    <span class="marquee-item"><span class="dot"></span>Computer Vision</span>
     <!-- duplicate for seamless loop -->
-    <span class="marquee-item"><span class="dot"></span>PyTorch</span>
-    <span class="marquee-item"><span class="dot"></span>Computer Vision</span>
-    <span class="marquee-item"><span class="dot"></span>LangChain</span>
-    <span class="marquee-item"><span class="dot"></span>Transformers</span>
-    <span class="marquee-item"><span class="dot"></span>Deep Learning</span>
-    <span class="marquee-item"><span class="dot"></span>MediaPipe</span>
-    <span class="marquee-item"><span class="dot"></span>HuggingFace</span>
-    <span class="marquee-item"><span class="dot"></span>FastAPI</span>
-    <span class="marquee-item"><span class="dot"></span>AWS SageMaker</span>
-    <span class="marquee-item"><span class="dot"></span>Streamlit</span>
+    <span class="marquee-item"><span class="dot"></span>LLM Benchmarking</span>
+    <span class="marquee-item"><span class="dot"></span>Hallucination Detection</span>
+    <span class="marquee-item"><span class="dot"></span>Adversarial Robustness</span>
+    <span class="marquee-item"><span class="dot"></span>Multimodal Models</span>
+    <span class="marquee-item"><span class="dot"></span>Vision Transformers</span>
     <span class="marquee-item"><span class="dot"></span>RAG Pipelines</span>
+    <span class="marquee-item"><span class="dot"></span>HuggingFace</span>
+    <span class="marquee-item"><span class="dot"></span>PyTorch</span>
     <span class="marquee-item"><span class="dot"></span>Medical AI</span>
+    <span class="marquee-item"><span class="dot"></span>Model Evaluation</span>
+    <span class="marquee-item"><span class="dot"></span>Foundation Models</span>
+    <span class="marquee-item"><span class="dot"></span>Computer Vision</span>
   </div>
 </div>
 
@@ -690,7 +703,7 @@
       <div class="fade-up">
         <div class="about-typed">&gt;_ <span id="typed-about"></span></div>
         <p class="about-text">
-          AI/ML Engineer and final-year CS student at Karachi, specializing in deep learning, computer vision, and large language models. I build research-grade systems and real-world pipelines — from retinal image diagnostics to sign language recognition. Currently pursuing a fully funded international research position or PhD.
+          AI/ML researcher and final-year CS student at FAST-NUCES, Karachi. My work sits at the intersection of model evaluation, robustness, and multimodal learning — building systems that are not just accurate, but reliable under adversarial and real-world degradation conditions. I'm particularly interested in LLM hallucination, vision-language alignment, and rigorous benchmarking methodology. Currently pursuing a fully funded international PhD.
         </p>
         <div class="about-stats">
           <div class="stat-item">
@@ -710,6 +723,15 @@
             <div class="stat-label">Certifications</div>
           </div>
         </div>
+        <div class="research-pills">
+          <span class="research-pill"><i class="fas fa-flask"></i> LLM Hallucination</span>
+          <span class="research-pill"><i class="fas fa-shield-alt"></i> Adversarial Robustness</span>
+          <span class="research-pill"><i class="fas fa-layer-group"></i> Multimodal AI</span>
+          <span class="research-pill"><i class="fas fa-chart-bar"></i> Benchmarking</span>
+          <span class="research-pill"><i class="fas fa-eye"></i> Vision Models</span>
+          <span class="research-pill"><i class="fas fa-brain"></i> Foundation Models</span>
+        </div>
+        <br/>
         <a href="assets/DAYAN_RESUME.pdf" target="_blank" class="btn-primary">My Resume</a>
       </div>
     </div>
@@ -724,25 +746,6 @@
     <div class="section-label fade-up">Experience</div>
     <h2 class="section-title fade-up">Where I've worked.</h2>
     <div class="timeline">
-
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-meta">
-          <div class="timeline-role">Final Year Project Researcher</div>
-          <div class="timeline-org">FAST-NUCES, Karachi</div>
-          <div class="timeline-date">2025 — Present</div>
-        </div>
-        <div class="timeline-desc">
-          Developing DR-RobustBench, a benchmarking framework evaluating deep learning architectures under simulated retinal fundus image degradation for diabetic retinopathy grading. Architectures include EfficientNet-B4, ConvNeXt-Tiny, Swin Transformer, and RETFound.
-        </div>
-        <div class="timeline-tags">
-          <span class="timeline-tag">PyTorch</span>
-          <span class="timeline-tag">Medical AI</span>
-          <span class="timeline-tag">EfficientNet</span>
-          <span class="timeline-tag">Swin Transformer</span>
-          <span class="timeline-tag">Computer Vision</span>
-        </div>
-      </div>
 
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
@@ -771,12 +774,12 @@
           <div class="timeline-date">2021 — 2027</div>
         </div>
         <div class="timeline-desc">
-          Studying Computer Science with focus areas in AI, machine learning, and deep learning. Participated in hackathons (Harvard CS50x, LabLab, Meta Hacker Cup), completed specializations in ML and cloud, and built a portfolio of applied AI systems.
+          Studying Computer Science with research focus areas in AI, robustness, and deep learning evaluation. Participated in hackathons (Harvard CS50x, LabLab, Meta Hacker Cup), completed specializations in ML and cloud, and built a portfolio of applied AI research systems.
         </div>
         <div class="timeline-tags">
-          <span class="timeline-tag">AI/ML</span>
+          <span class="timeline-tag">AI/ML Research</span>
           <span class="timeline-tag">Python</span>
-          <span class="timeline-tag">Research</span>
+          <span class="timeline-tag">Benchmarking</span>
           <span class="timeline-tag">AWS</span>
         </div>
       </div>
@@ -791,21 +794,59 @@
 <section id="projects">
   <div class="section-inner">
     <div class="section-label fade-up">Projects</div>
-    <h2 class="section-title fade-up">What I've built.</h2>
+    <h2 class="section-title fade-up">What I've researched<br/><em>&amp; built.</em></h2>
     <div class="projects-grid">
 
-      <a href="https://github.com/dayanatif" target="_blank" class="project-card glass fade-up">
+      <a href="https://github.com/dayanatif/Adversarial-robustness-cifar10" target="_blank" class="project-card glass fade-up">
         <div class="project-header">
-          <div class="project-icon"><i class="fas fa-eye"></i></div>
-          <span class="project-status">FYP</span>
+          <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+          <span class="project-status">Research</span>
         </div>
-        <div class="project-name">DR-RobustBench</div>
-        <div class="project-desc">Benchmarking deep learning architectures under retinal fundus image degradation for diabetic retinopathy grading.</div>
+        <div class="project-name">Adversarial Robustness</div>
+        <div class="project-desc">Systematic evaluation of CNN robustness under adversarial attacks (FGSM, PGD) on CIFAR-10 — measuring accuracy degradation and defense strategies across architectures.</div>
         <div class="project-stack">
           <span class="stack-tag">PyTorch</span>
-          <span class="stack-tag">EfficientNet-B4</span>
-          <span class="stack-tag">Swin Transformer</span>
-          <span class="stack-tag">RETFound</span>
+          <span class="stack-tag">FGSM / PGD</span>
+          <span class="stack-tag">CIFAR-10</span>
+          <span class="stack-tag">Benchmarking</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
+          <i class="fas fa-external-link-alt" style="font-size:12px;color:var(--white-40);"></i>
+        </div>
+      </a>
+
+      <a href="https://github.com/dayanatif/AskTube" target="_blank" class="project-card glass fade-up">
+        <div class="project-header">
+          <div class="project-icon"><i class="fab fa-youtube"></i></div>
+          <span class="project-status">Live</span>
+        </div>
+        <div class="project-name">AskTube</div>
+        <div class="project-desc">RAG-powered assistant for YouTube videos — fetches transcripts, embeds with FAISS + Google Generative AI, and answers questions via HuggingFace LLMs through a Streamlit UI.</div>
+        <div class="project-stack">
+          <span class="stack-tag">LangChain</span>
+          <span class="stack-tag">FAISS</span>
+          <span class="stack-tag">HuggingFace</span>
+          <span class="stack-tag">Streamlit</span>
+          <span class="stack-tag">RAG</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
+          <i class="fas fa-external-link-alt" style="font-size:12px;color:var(--white-40);"></i>
+        </div>
+      </a>
+
+      <a href="https://github.com/dayanatif/RAGify-Gemini" target="_blank" class="project-card glass fade-up">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-brain"></i></div>
+        </div>
+        <div class="project-name">RAGify-Gemini</div>
+        <div class="project-desc">Retrieval-Augmented Generation pipeline using Google Gemini for context-aware document Q&amp;A — exploring grounding techniques to reduce hallucination at scale.</div>
+        <div class="project-stack">
+          <span class="stack-tag">LangChain</span>
+          <span class="stack-tag">Gemini</span>
+          <span class="stack-tag">FAISS</span>
+          <span class="stack-tag">Python</span>
         </div>
         <div class="project-footer">
           <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
@@ -819,7 +860,7 @@
           <span class="project-status">Live</span>
         </div>
         <div class="project-name">SignBridge</div>
-        <div class="project-desc">Real-time ASL recognition system using MediaPipe landmarks and scikit-learn, with gesture-based mouse control mode.</div>
+        <div class="project-desc">Real-time ASL recognition system using MediaPipe landmarks and scikit-learn, with gesture-based mouse control — multimodal perception at the edge.</div>
         <div class="project-stack">
           <span class="stack-tag">MediaPipe</span>
           <span class="stack-tag">scikit-learn</span>
@@ -832,51 +873,17 @@
         </div>
       </a>
 
-      <a href="https://github.com/dayanatif/RAGify-Gemini" target="_blank" class="project-card glass fade-up">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-brain"></i></div>
-        </div>
-        <div class="project-name">RAGify-Gemini</div>
-        <div class="project-desc">Retrieval-Augmented Generation pipeline using Google Gemini for context-aware document Q&amp;A at scale.</div>
-        <div class="project-stack">
-          <span class="stack-tag">LangChain</span>
-          <span class="stack-tag">Gemini</span>
-          <span class="stack-tag">FAISS</span>
-          <span class="stack-tag">Python</span>
-        </div>
-        <div class="project-footer">
-          <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
-          <i class="fas fa-external-link-alt" style="font-size:12px;color:var(--white-40);"></i>
-        </div>
-      </a>
-
       <a href="https://github.com/dayanatif/MedInsight-AI-Agent" target="_blank" class="project-card glass fade-up">
         <div class="project-header">
           <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
         </div>
         <div class="project-name">MedInsight AI</div>
-        <div class="project-desc">Symptom-to-disease AI assistant built with ethical AI guidelines, diagnostic reasoning chains, and safety guardrails.</div>
+        <div class="project-desc">Symptom-to-disease AI assistant with diagnostic reasoning chains and safety guardrails — examining LLM reliability and hallucination in high-stakes clinical contexts.</div>
         <div class="project-stack">
           <span class="stack-tag">LangChain</span>
           <span class="stack-tag">FastAPI</span>
           <span class="stack-tag">Streamlit</span>
-        </div>
-        <div class="project-footer">
-          <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
-          <i class="fas fa-external-link-alt" style="font-size:12px;color:var(--white-40);"></i>
-        </div>
-      </a>
-
-      <a href="https://github.com/dayanatif/Image-Classifier" target="_blank" class="project-card glass fade-up">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-image"></i></div>
-        </div>
-        <div class="project-name">Image Classifier</div>
-        <div class="project-desc">Streamlit app using MobileNetV2 for real-time image classification with confidence scores and visual explanations.</div>
-        <div class="project-stack">
-          <span class="stack-tag">MobileNetV2</span>
-          <span class="stack-tag">TensorFlow</span>
-          <span class="stack-tag">Streamlit</span>
+          <span class="stack-tag">Guardrails</span>
         </div>
         <div class="project-footer">
           <span class="project-link">View on GitHub <i class="fas fa-arrow-right" style="font-size:11px;"></i></span>
@@ -1000,8 +1007,18 @@
     <h2 class="section-title fade-up">Tools of the trade.</h2>
     <div class="skills-grid">
       <div class="fade-up">
-        <p class="skills-intro">Focused on the intersection of research and engineering — building systems that are both theoretically sound and production-ready. From retinal diagnostics to real-time gesture recognition.</p>
+        <p class="skills-intro">Focused on rigorous model evaluation — building systems that are both theoretically grounded and honest about failure modes. From adversarial robustness to hallucination measurement in RAG pipelines.</p>
         <div class="skill-categories">
+          <div>
+            <div class="skill-category-label">Research Areas</div>
+            <div class="skill-tags">
+              <span class="tag glass">Robustness</span>
+              <span class="tag glass">Hallucination</span>
+              <span class="tag glass">Benchmarking</span>
+              <span class="tag glass">Multimodal</span>
+              <span class="tag glass">RAG</span>
+            </div>
+          </div>
           <div>
             <div class="skill-category-label">Frameworks</div>
             <div class="skill-tags">
@@ -1019,18 +1036,8 @@
               <span class="tag glass">Streamlit</span>
               <span class="tag glass">Docker</span>
               <span class="tag glass">AWS</span>
-              <span class="tag glass">MediaPipe</span>
-              <span class="tag glass">MySQL</span>
-            </div>
-          </div>
-          <div>
-            <div class="skill-category-label">Core Libraries</div>
-            <div class="skill-tags">
-              <span class="tag glass">NumPy</span>
-              <span class="tag glass">Scikit-learn</span>
-              <span class="tag glass">Pandas</span>
-              <span class="tag glass">Matplotlib</span>
               <span class="tag glass">FAISS</span>
+              <span class="tag glass">MediaPipe</span>
             </div>
           </div>
         </div>
@@ -1041,20 +1048,20 @@
           <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95"></div></div>
         </div>
         <div class="skill-bar">
-          <div class="skill-bar-header"><span class="skill-bar-label">LangChain / LLMs</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-bar-header"><span class="skill-bar-label">LLMs / RAG / Hallucination</span><span class="skill-bar-pct">90%</span></div>
           <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
         </div>
         <div class="skill-bar">
-          <div class="skill-bar-header"><span class="skill-bar-label">Computer Vision</span><span class="skill-bar-pct">88%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill-bar-header"><span class="skill-bar-label">FastAPI / Backend</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-header"><span class="skill-bar-label">Adversarial Robustness</span><span class="skill-bar-pct">85%</span></div>
           <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
         </div>
         <div class="skill-bar">
-          <div class="skill-bar-header"><span class="skill-bar-label">TensorFlow / PyTorch</span><span class="skill-bar-pct">82%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+          <div class="skill-bar-header"><span class="skill-bar-label">Computer Vision / Multimodal</span><span class="skill-bar-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-header"><span class="skill-bar-label">Model Benchmarking / Eval</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
         </div>
         <div class="skill-bar">
           <div class="skill-bar-header"><span class="skill-bar-label">AWS / Cloud</span><span class="skill-bar-pct">70%</span></div>
@@ -1142,11 +1149,11 @@
 
   // ── Typed.js ──
   new Typed('#typed-hero', {
-    strings: ['AI/ML Engineer.', 'Computer Vision Researcher.', 'LLM Developer.', 'Deep Learning Engineer.'],
+    strings: ['LLM Researcher.', 'Robustness Engineer.', 'Multimodal AI Builder.', 'Hallucination Hunter.', 'Vision Model Benchmarker.'],
     typeSpeed: 55, backSpeed: 28, loop: true, backDelay: 2000
   });
   new Typed('#typed-about', {
-    strings: ['Building AI that matters.', 'Deep learning researcher.', 'Vision + Language models.'],
+    strings: ['Benchmarking models that matter.', 'Robustness over accuracy.', 'Multimodal. Rigorous. Honest.'],
     typeSpeed: 50, backSpeed: 25, loop: true, backDelay: 2400
   });
 
