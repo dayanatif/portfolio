@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rao Muhammad Dayan Atif — AI/ML researcher, Mitacs Globalink Research Intern at Dalhousie University, working on explainable AI, neuron interpretation, and causal intervention." />
+  <meta name="description" content="Rao Muhammad Dayan Atif | AI/ML researcher and Computer Engineering student interested in explainable AI, trustworthy machine learning, language models, robustness, and computer vision." />
   <title>Rao Muhammad Dayan Atif | AI/ML Researcher</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -195,6 +195,42 @@
     .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
     .hero-meta i { color: var(--blue); }
 
+    .hero-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .profile-panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-panel img {
+      display: block;
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      object-position: center 22%;
+      border-radius: 14px;
+    }
+
+    .profile-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 8px 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .profile-caption strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
     .actions { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn {
       display: inline-flex;
@@ -214,75 +250,6 @@
     .btn-primary:hover { box-shadow: 0 12px 28px rgba(15,47,87,0.22); }
     .btn-secondary { border-color: var(--line); background: var(--surface); color: var(--ink); }
     .btn-secondary:hover { border-color: #cbd5e1; }
-
-    .research-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .research-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 4px;
-      background: var(--blue);
-    }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--green);
-      background: #edf7f1;
-      border: 1px solid #d6ebde;
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin-bottom: 18px;
-    }
-
-    .status-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--green);
-    }
-
-    .research-card h2 {
-      font-family: var(--serif);
-      color: var(--ink);
-      font-size: 27px;
-      line-height: 1.25;
-      margin-bottom: 12px;
-    }
-
-    .research-card p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
-
-    .research-facts {
-      border-top: 1px solid var(--line);
-      display: grid;
-      gap: 0;
-    }
-
-    .fact {
-      display: grid;
-      grid-template-columns: 92px 1fr;
-      gap: 14px;
-      padding: 13px 0;
-      border-bottom: 1px solid var(--line);
-      font-size: 13px;
-    }
-    .fact:last-child { border-bottom: 0; padding-bottom: 0; }
-    .fact-label { color: var(--muted); font-weight: 600; }
-    .fact-value { color: var(--ink); font-weight: 600; }
 
     /* Generic section */
     section.content-section { padding: 84px 0; }
@@ -384,6 +351,8 @@
     .timeline-content p { color: var(--muted); font-size: 14px; max-width: 820px; }
     .mini-tags { margin-top: 13px; display: flex; flex-wrap: wrap; gap: 8px; }
     .mini-tag { font-size: 11px; font-weight: 700; color: #52677e; background: var(--surface-soft); padding: 4px 8px; border-radius: 6px; }
+    .text-link { color: var(--blue); font-weight: 700; text-decoration: none; font-size: 12px; }
+    .text-link:hover { text-decoration: underline; }
 
     /* Education */
     .education-card {
@@ -585,47 +554,31 @@
           <div class="eyebrow">AI / ML Research</div>
           <h1>Rao Muhammad<br />Dayan Atif</h1>
           <p class="hero-role">
-            <strong>Mitacs Globalink Research Intern at Dalhousie University</strong>, working on explainable AI, neuron-level interpretation, and causal intervention.
+            <strong>AI/ML researcher and Computer Engineering student</strong> interested in building and understanding reliable, interpretable machine-learning systems.
           </p>
           <p class="hero-summary">
-            Undergraduate researcher interested in understanding how modern neural models represent and use information — with broader interests in trustworthy AI, language models, robustness, and computer vision.
+            My interests span explainable and trustworthy AI, language models, representation analysis, robustness, multimodal learning, and computer vision.
           </p>
           <div class="hero-meta">
-            <span><i class="fa-solid fa-location-dot"></i> Halifax, Nova Scotia · Karachi, Pakistan</span>
-            <span><i class="fa-solid fa-building-columns"></i> Dalhousie University · SSUET</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> Computer Engineering, SSUET</span>
+            <span><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</span>
           </div>
           <div class="actions">
-            <a class="btn btn-primary" href="#research"><i class="fa-solid fa-microscope"></i> Current Research</a>
+            <a class="btn btn-primary" href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
             <a class="btn btn-secondary" href="assets/dayan_res.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> View CV</a>
             <a class="btn btn-secondary" href="https://github.com/dayanatif" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
 
-        <aside class="research-card" id="research" aria-label="Current research">
-          <div class="status"><span class="status-dot"></span> Current research · 2026</div>
-          <h2>Neuron Interpretation Supported by Causal Intervention</h2>
-          <p>
-            Investigating neuron-level interpretability methods that move beyond correlation and test whether identified representations are causally used by the model.
-          </p>
-          <div class="research-facts">
-            <div class="fact">
-              <div class="fact-label">Program</div>
-              <div class="fact-value">Mitacs Globalink Research Internship</div>
-            </div>
-            <div class="fact">
-              <div class="fact-label">Host</div>
-              <div class="fact-value">Dalhousie University · HyperMatrix Lab</div>
-            </div>
-            <div class="fact">
-              <div class="fact-label">Supervisor</div>
-              <div class="fact-value">Prof. Hassan Sajjad</div>
-            </div>
-            <div class="fact">
-              <div class="fact-label">Focus</div>
-              <div class="fact-value">Explainable AI · Neuron Analysis · Causal Intervention</div>
-            </div>
-          </div>
-        </aside>
+        <div class="hero-side">
+          <figure class="profile-panel">
+            <img src="assets/profile.jpg" alt="Rao Muhammad Dayan Atif" />
+            <figcaption class="profile-caption">
+              <strong>Rao Muhammad Dayan Atif</strong>
+              <span>AI / ML Research</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -634,9 +587,9 @@
         <div class="section-head">
           <div class="section-kicker">About</div>
           <div>
-            <h2 class="section-title">Researching models beyond their final prediction.</h2>
+            <h2 class="section-title">Interested in how intelligent systems work, fail, and improve.</h2>
             <p class="section-intro">
-              My current work is centered on mechanistic questions: what individual neurons encode, when those representations matter, and how causal interventions can validate an interpretation rather than merely describe a correlation.
+              I am particularly interested in explainability, trustworthy machine learning, representation analysis, robustness, and the behavior of modern language and multimodal models.
             </p>
           </div>
         </div>
@@ -644,13 +597,13 @@
         <div class="about-grid">
           <div class="about-copy">
             <p>
-              I am an undergraduate Computer Engineering student at Sir Syed University of Engineering &amp; Technology (SSUET), Pakistan, and a 2026 Mitacs Globalink Research Intern at Dalhousie University in Halifax, Canada.
+              I am an undergraduate Computer Engineering student at Sir Syed University of Engineering &amp; Technology (SSUET), Pakistan, with research and project experience across machine learning, language models, computer vision, and explainable AI.
             </p>
             <p>
-              At Dalhousie, I work under Prof. Hassan Sajjad on explainable AI, with a current focus on neuron-level interpretation supported by causal intervention. The broader goal is to study not only whether a concept is represented inside a model, but whether the model actually uses that representation during its computation.
+              I am drawn to questions about what neural models learn internally, how those representations influence model behavior, and how we can evaluate systems more rigorously than by final-task accuracy alone. My interests include neuron-level interpretability, causal intervention, robustness, grounding, and multimodal learning.
             </p>
             <p>
-              I also enjoy building practical machine-learning systems across language, vision, retrieval-augmented generation, adversarial robustness, and human-computer interaction. My long-term goal is graduate research in trustworthy and interpretable AI.
+              Alongside research, I enjoy building practical AI systems and experimenting with tools such as PyTorch, Hugging Face, LangChain, OpenCV, and retrieval-augmented generation. I am interested in pursuing graduate research in AI and machine learning.
             </p>
           </div>
 
@@ -677,18 +630,18 @@
           <div class="section-kicker">Experience</div>
           <div>
             <h2 class="section-title">Research, teaching, and technical work.</h2>
-            <p class="section-intro">A concise view of the experiences most relevant to my research trajectory.</p>
+            <p class="section-intro">Selected research, teaching, and technical experience.</p>
           </div>
         </div>
 
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-date">Aug 2026 — Present</div>
+            <div class="timeline-date">2026</div>
             <div class="timeline-content">
               <h3>Mitacs Globalink Research Intern</h3>
               <div class="timeline-org">Dalhousie University · HyperMatrix Lab · Halifax, Canada</div>
               <p>
-                Conducting research under Prof. Hassan Sajjad on neuron-level interpretation and causal intervention for explainable AI. Current work includes literature review, experimental design, representation analysis, intervention-based evaluation, and research prototyping.
+                Research under Prof. Hassan Sajjad focused on neuron-level interpretation and causal intervention for explainable AI, including literature review, experimental design, representation analysis, intervention-based evaluation, and research prototyping.
               </p>
               <div class="mini-tags">
                 <span class="mini-tag">Explainable AI</span>
@@ -697,6 +650,26 @@
                 <span class="mini-tag">PyTorch</span>
                 <span class="mini-tag">Transformers</span>
               </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Aug 2025 - Sep 2025</div>
+            <div class="timeline-content">
+              <h3>Machine Learning Intern</h3>
+              <div class="timeline-org">Elevvo Pathways · Remote · Cairo, Egypt</div>
+              <p>
+                Investigated machine-learning models for student performance prediction and customer segmentation using large-scale datasets. Designed and validated preprocessing strategies that improved model robustness and accuracy by 15%, and collaborated with engineers and data scientists to refine methodologies and interpret experimental results.
+              </p>
+              <div class="mini-tags">
+                <span class="mini-tag">Machine Learning</span>
+                <span class="mini-tag">Data Preprocessing</span>
+                <span class="mini-tag">Model Evaluation</span>
+                <span class="mini-tag">Python</span>
+              </div>
+              <p style="margin-top: 14px;">
+                <a href="https://drive.google.com/file/d/1uhS02S15GjrVgVpnk52hjaknWqVcf5T4/view?usp=sharing" target="_blank" rel="noopener" class="text-link">View internship certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </p>
             </div>
           </article>
 
@@ -885,7 +858,7 @@
           <div class="section-kicker">Skills</div>
           <div>
             <h2 class="section-title">Technical toolkit.</h2>
-            <p class="section-intro">Grouped by actual working areas — no arbitrary percentage bars.</p>
+            <p class="section-intro">Grouped by actual working areas, with no arbitrary percentage bars.</p>
           </div>
         </div>
 
